@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>personas</title>
+</head>
+<body>
+
+<h1>Lista de personas</h1>
+
+<div th:if="${lista.isEmpty()}">No hay usuarios</div>
+
+<table th:if="${!lista.isEmpty()}" border="2">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Mayor</th>
+    </tr>
+
+    <tr th:each="persons:${lista}">
+        <td th:text="${persons.nombre}"></td>
+        <td th:text="${persons.edad}"></td>
+        <td>
+            <span th:if="${persons.edad>=18}">Mayor</span>
+            <span th:if="${persons.edad<18}">Menor</span>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
