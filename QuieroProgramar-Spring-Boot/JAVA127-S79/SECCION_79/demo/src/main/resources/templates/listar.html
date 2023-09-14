@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de usuarios</title>
+</head>
+
+<body>
+
+    <!--titulo es un key del controller-->
+    <h1 th:text="${titulo}"></h1>
+
+    <!--si la tabla esta vacio se muestra este mensaje-->
+    <div th:if="${ usuarios.isEmpty}">
+        No hay usuarios en la lista
+    </div>
+
+    <!--si la tabla no esta vacio se muestra la tabla-->
+    <table th:if="${not usuarios.isEmpty}" border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+
+        <!--    lista es propia del for each-->
+        <!--    usuarios es el key que esta en el controller-->
+
+        <tr th:each="lista:${usuarios}">
+            <td th:text="${lista.nombre}"></td>
+            <td th:text="${lista.apellido}"></td>
+
+            <!--        si el usuaio tiene un email se lo muestra normalmente-->
+            <!--        si no tiene se muestra el mensaje-->
+            <td th:if="${lista.email}" th:text="${lista.email}"></td>
+            <td th:if="${lista.email==null}">N/A</td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
