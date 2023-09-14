@@ -4,48 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08a03011-82b6-4b70-8791-efd728f72466" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/SECCION_79.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+    <list default="true" id="08a03011-82b6-4b70-8791-efd728f72466" name="Changes" comment="primer commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nuevo Documento de Microsoft Word.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Nuevo Documento de Microsoft Word.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller/PersonasController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Models/Personas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Models/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/perfil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Controller/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Controller/PersonasController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DemoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Models/Personas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Models/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/listar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/perfil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/personas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/DemoApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
@@ -62,12 +39,16 @@
     </option>
   </component>
   <component name="ProjectId" id="2VOGrazecU62FWUpqTgSltoNca3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/USER/Desktop/CURSOS/UDEMY/SPRING-BOOT/JAVA127/SECCION_79"
   }
@@ -81,6 +62,25 @@
       <option name="presentableId" value="Default" />
       <updated>1694699917255</updated>
     </task>
+    <task id="LOCAL-00001" summary="primer commit">
+      <created>1694700011264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694700011264</updated>
+    </task>
+    <task id="LOCAL-00002" summary="primer commit">
+      <created>1694700167857</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694700167857</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="primer commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="primer commit" />
   </component>
 </project>
