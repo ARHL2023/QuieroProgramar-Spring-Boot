@@ -12,6 +12,12 @@
     <ul>
         <li><a th:href="@{/params/string(texto='Hola Mundo')}">@{/params/string?texto='Hola Mundo</a></li>
         <li><a th:href="@{/params/string(texto='Hola Mundo2')}">@{/params/string?texto='Hola Mundo2</a></li>
+
+        <li><a th:href="@{/params/mix-params(saludo='Saludando a Andy', numero=7)}">/params/mix-params?Saludando a?&numero=7</a></li>
+
+
+        <li><a th:href="@{/params/mix-params-request(saludo='Saludando a Andy', numero=7)}">/params/mix-params-request?Saludando a?&numero=7</a></li>
+
     </ul>
 
 </body>
