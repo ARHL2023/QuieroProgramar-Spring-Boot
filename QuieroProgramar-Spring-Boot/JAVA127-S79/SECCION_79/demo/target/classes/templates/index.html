@@ -9,5 +9,32 @@
 <h1>Hola mundo con spring boot. con HTML puro</h1>
 <h1 th:text="${titulo}"></h1>
 
+
+<!--es la tabla del listar para probar el @ModelAttribute-->
+<h2>Prueba @ModelAttribute</h2>
+<table th:if="${not usuarios.isEmpty}" border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+    </tr>
+
+    <!--    lista es propia del for each-->
+    <!--    usuarios es el key que esta en el controller-->
+
+    <tr th:each="lista:${usuarios}">
+        <td th:text="${lista.nombre}"></td>
+        <td th:text="${lista.apellido}"></td>
+
+        <!--        si el usuaio tiene un email se lo muestra normalmente-->
+        <!--        si no tiene se muestra el mensaje-->
+        <td th:if="${lista.email}" th:text="${lista.email}"></td>
+        <td th:if="${lista.email==null}">N/A</td>
+
+    </tr>
+
+</table>
+
+
 </body>
 </html>
