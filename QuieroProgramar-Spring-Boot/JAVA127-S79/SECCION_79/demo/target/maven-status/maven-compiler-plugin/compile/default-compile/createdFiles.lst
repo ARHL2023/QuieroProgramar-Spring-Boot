@@ -1,4 +1,5 @@
 com\example\demo\DemoApplication.class
 com\example\demo\controllers\IndexController.class
 com\example\demo\controllers\EjemploParamsController.class
+com\example\demo\controllers\PracticaParamsController.class
 com\example\demo\models\Usuario.class

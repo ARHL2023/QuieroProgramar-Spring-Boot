@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,8 @@ public class IndexController {
     public String index(Model model) {
         model.addAttribute("titulo", "Hola mundo desde spring boot con modelcon thymeleaf");
         return "index";
-    }
+    }//
+
 
     @GetMapping("/perfil")
     public String perfil(Model model) {
@@ -33,7 +35,7 @@ public class IndexController {
         model.addAttribute("titulo", "Perfil de usuario : ".concat(usuario.getNombre()));
 
         return "perfil";
-    }
+    }//perfil
 
     @GetMapping("/listar")
     public String listar(Model model) {
@@ -48,7 +50,7 @@ public class IndexController {
 //        model.addAttribute("usuarios", listaUsuarios);
 
         return "listar";
-    }
+    }//listar
 
 
     //@ModelAttribute --se aplica a todos los metodos del controlador, aqui sera con index
@@ -62,6 +64,7 @@ public class IndexController {
         listaUsuarios.add(new Usuario("Nuevo", "Nuevo2"));
 
         return listaUsuarios;//retorna la lista
-    }
+    }//List<Usuario>
+
 
 }

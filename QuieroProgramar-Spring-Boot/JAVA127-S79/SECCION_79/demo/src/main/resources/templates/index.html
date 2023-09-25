@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/Style.css}">
+
 </head>
 <body>
 
-<h1>Hola mundo con spring boot. con HTML puro</h1>
+
+<h1 class="color-rojo">Hola mundo con spring boot. con HTML puro</h1>
 <h1 th:text="${titulo}"></h1>
 
 
 <!--es la tabla del listar para probar el @ModelAttribute-->
-<h2>Prueba @ModelAttribute</h2>
+<h2 class="color-azul">Prueba @ModelAttribute</h2>
 <table th:if="${not usuarios.isEmpty}" border="1">
     <tr>
         <th>Nombre</th>
