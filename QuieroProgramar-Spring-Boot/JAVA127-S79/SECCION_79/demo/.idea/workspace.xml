@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08a03011-82b6-4b70-8791-efd728f72466" name="Changes" comment=" css (610)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TextoPropertiesConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/PropertiesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/properties/properties.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/texto.properties" afterDir="false" />
+    <list default="true" id="08a03011-82b6-4b70-8791-efd728f72466" name="Changes" comment=" properties(612-613)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695652427029</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=" properties(612-613)">
+      <created>1695654468436</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695654468436</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +161,7 @@
     <MESSAGE value="@RequestParam(607)" />
     <MESSAGE value="@RequestParam y HttpServletRequest - obtener varios parametros de la URL (608)" />
     <MESSAGE value=" css (610)" />
-    <option name="LAST_COMMIT_MESSAGE" value=" css (610)" />
+    <MESSAGE value=" properties(612-613)" />
+    <option name="LAST_COMMIT_MESSAGE" value=" properties(612-613)" />
   </component>
 </project>
