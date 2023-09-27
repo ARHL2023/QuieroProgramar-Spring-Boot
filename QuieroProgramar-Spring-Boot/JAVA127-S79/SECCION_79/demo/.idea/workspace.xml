@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08a03011-82b6-4b70-8791-efd728f72466" name="Changes" comment="retornandocon redirect o forward(614)">
-      <change afterPath="$PROJECT_DIR$/../demoPracticeSECCION79/src/main/java/com/example/demoPracticeSECCION79/LoginConfigProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoPracticeSECCION79/src/main/java/com/example/demoPracticeSECCION79/controller/ListarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoPracticeSECCION79/src/main/java/com/example/demoPracticeSECCION79/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoPracticeSECCION79/src/main/java/com/example/demoPracticeSECCION79/model/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoPracticeSECCION79/src/main/resources/login.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoPracticeSECCION79/src/main/resources/templates/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoPracticeSECCION79/src/main/resources/templates/login.html" afterDir="false" />
+    <list default="true" id="08a03011-82b6-4b70-8791-efd728f72466" name="Changes" comment="rars completos de seccion 79">
+      <change beforePath="$PROJECT_DIR$/../demo.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoPracticeSECCION79.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SECCION_80/A.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695655237710</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="rars completos de seccion 79">
+      <created>1695826246003</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695826246003</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -178,6 +179,7 @@
     <MESSAGE value=" css (610)" />
     <MESSAGE value=" properties(612-613)" />
     <MESSAGE value="retornandocon redirect o forward(614)" />
-    <option name="LAST_COMMIT_MESSAGE" value="retornandocon redirect o forward(614)" />
+    <MESSAGE value="rars completos de seccion 79" />
+    <option name="LAST_COMMIT_MESSAGE" value="rars completos de seccion 79" />
   </component>
 </project>
