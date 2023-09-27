@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Listar</title>
+</head>
+<body>
+
+<div th:if="${usuarios.isEmpty}">
+  La lista esta vacia
+</div>
+
+<div th:if="${not usuarios.isEmpty}">
+  <table border="1">
+
+    <tr>
+      <th>Nombre</th>
+      <th>Contraseña</th>
+    </tr>
+
+    <tr th:each="lista : ${usuarios}">
+      <td th:text="${lista.user}"></td>
+
+      <td th:if="${lista.password}" th:text="${lista.password}"></td>
+      <td th:if="${lista.password==null}">N/A</td>
+
+    </tr>
+
+  </table>
+</div>
+
+</body>
+</html>
