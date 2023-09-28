@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08a03011-82b6-4b70-8791-efd728f72466" name="Changes" comment="rars completos de seccion 79">
-      <change beforePath="$PROJECT_DIR$/../demo.zip" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SECCION_80/demo80DIPRACTICEFACTURA/src/main/java/com/example/demo80DIPRACTICEFACTURA/controllers/IndexControllers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SECCION_80/demo80DIPRACTICEFACTURA/src/main/java/com/example/demo80DIPRACTICEFACTURA/models/domains/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SECCION_80/demo80DIPRACTICEFACTURA/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoPracticeSECCION79.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SECCION_80/A.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
