@@ -1,15 +1,18 @@
 package com.bolsadeideas.springboot.form.app.models.domain;
 
-
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
 @Data
 public class Usuario {
 
-    @No
+    @NotEmpty
     private String username;
-    private String password;
-    private String email;
 
+    @NotEmpty
+    private String password;
+
+    @NotEmpty
+    private String email;
 
 }
