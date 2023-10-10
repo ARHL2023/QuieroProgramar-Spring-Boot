@@ -6,6 +6,15 @@ import lombok.Data;
 @Data
 public class Usuario {
 
+
+    private String identificador;
+
+    @NotEmpty
+    private String nombre;
+
+    @NotEmpty
+    private String apellido;
+
     @NotEmpty
     private String username;
 
