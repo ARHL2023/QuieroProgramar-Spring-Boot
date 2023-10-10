@@ -15,7 +15,7 @@ public class Usuario {
 
     private String identificador;
 
-    @NotEmpty
+    //@NotEmpty
     private String nombre;
 
     @NotEmpty
