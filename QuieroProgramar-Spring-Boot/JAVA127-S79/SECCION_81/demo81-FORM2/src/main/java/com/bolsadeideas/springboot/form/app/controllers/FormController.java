@@ -22,7 +22,7 @@ public class FormController {
         //mostrando valores de atributos de objeto model en el formulario (only nombre y apellido)
         usuario.setNombre("Andy");
         usuario.setApellido("Luna");
-        usuario.setIdentificador("123-k");
+        usuario.setIdentificador("123.456.789-K");
 
         model.addAttribute("titulo", "Formulario usuarios");
         model.addAttribute("usuario", usuario);
