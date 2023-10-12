@@ -35,4 +35,9 @@ public class Usuario {
     @Email
     private String email;
 
+    @NotNull// para objetos clases etc , si fuera int seria  solo con min y max
+    @Min(5)
+    @Max(5000)
+    private Integer cuenta;
+
 }
