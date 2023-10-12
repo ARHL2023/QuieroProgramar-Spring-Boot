@@ -14,13 +14,20 @@ public class UsuarioValidador implements Validator {
     @Override
     public boolean supports(Class<?> clazz) {
         return Usuario.class.isAssignableFrom(clazz);
-    }
+    }//
 
     @Override
     public void validate(Object target, Errors errors) {
         Usuario usuario = (Usuario) target;
-        //nombre no vacio
-        ValidationUtils.rejectIfEmpty(errors,"nombre","NotEmpty.usuario.nombre");
+
+        //nombre no vacio o con espacios en blanco
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"nombre","requerido.usuario.nombre");
+
+        //identificador
+        if(!usuario.getIdentificador().matches("[0-9]{2}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")){
+            errors.rejectValue("identificador","pattern.usuario.identificador");
+        }
+
     }//
 
 }
