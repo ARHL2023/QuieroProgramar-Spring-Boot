@@ -2,6 +2,7 @@ package com.bolsadeideas.springboot.form.app.models.domain;
 
 //import com.bolsadeideas.springboot.form.app.validations.IdentificadorRegex;
 import com.bolsadeideas.springboot.form.app.validations.IdentificadorRegex;
+import com.bolsadeideas.springboot.form.app.validations.validationsApellido.Requerido;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 @Data
@@ -18,7 +19,8 @@ public class Usuario {
     //@NotEmpty
     private String nombre;
 
-    @NotEmpty
+//    @NotEmpty
+    @Requerido
     private String apellido;
 
     @NotEmpty(message = "nuestro USUARIO no puede estar vasio (luego se mejorara en el properties)")
