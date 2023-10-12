@@ -1,6 +1,7 @@
 package com.bolsadeideas.springboot.form.app.models.domain;
 
 //import com.bolsadeideas.springboot.form.app.validations.IdentificadorRegex;
+import com.bolsadeideas.springboot.form.app.validations.IdentificadorRegex;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 @Data
@@ -9,6 +10,9 @@ public class Usuario {
 //     3 dígitos seguidos de un punto, seguidos de 3 dígitos, seguidos de un punto, seguidos de 3 dígitos,
 //    seguidos de un guión y, finalmente, seguidos de una letra mayúscula.
  //   @Pattern(regexp ="[0-9]{2}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")
+
+
+    @IdentificadorRegex
     private String identificador;
 
     //@NotEmpty

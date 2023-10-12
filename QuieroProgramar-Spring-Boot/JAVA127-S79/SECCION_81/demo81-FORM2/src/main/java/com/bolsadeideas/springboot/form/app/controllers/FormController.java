@@ -23,6 +23,11 @@ public class FormController {
     @Autowired
     private UsuarioValidador validador;
 
+    @InitBinder
+    public void initBinder(WebDataBinder binder){
+        binder.addValidators(validador);
+    }
+
     @GetMapping("/form")
     public String form(Model model) {
         Usuario usuario = new Usuario();
@@ -44,7 +49,7 @@ public class FormController {
     public String procesar(@Valid Usuario usuario, BindingResult result, Model model, SessionStatus sessionStatus) {
 
         //pasamos el validador que se inyecta
-        validador.validate(usuario, result);
+        //validador.validate(usuario, result);
 
         model.addAttribute("titulo", "Resultado form");
 

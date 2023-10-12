@@ -21,12 +21,12 @@ public class UsuarioValidador implements Validator {
         Usuario usuario = (Usuario) target;
 
         //nombre no vacio o con espacios en blanco
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"nombre","requerido.usuario.nombre");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"username","requerido.usuario.nombre");
 
         //identificador
-        if(!usuario.getIdentificador().matches("[0-9]{2}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")){
-            errors.rejectValue("identificador","pattern.usuario.identificador");
-        }
+//        if(!usuario.getIdentificador().matches("[0-9]{2}[.][\\d]{3}[.][\\d]{3}[-][A-Z]{1}")){
+//            errors.rejectValue("identificador","pattern.usuario.identificador");
+//        }
 
     }//
 
