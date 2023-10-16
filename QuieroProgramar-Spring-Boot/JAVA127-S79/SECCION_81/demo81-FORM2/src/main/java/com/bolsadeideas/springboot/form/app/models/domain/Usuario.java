@@ -5,6 +5,10 @@ import com.bolsadeideas.springboot.form.app.validations.IdentificadorRegex;
 import com.bolsadeideas.springboot.form.app.validations.validationsApellido.Requerido;
 import jakarta.validation.constraints.*;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.util.Date;
+
 @Data
 public class Usuario {
 
@@ -39,5 +43,11 @@ public class Usuario {
     @Min(5)
     @Max(5000)
     private Integer cuenta;
+
+//    @Future
+//    @Past
+    @NotNull
+    @DateTimeFormat(pattern = "yyyy/MM/dd")
+    private Date fechaNacimeinto;
 
 }
