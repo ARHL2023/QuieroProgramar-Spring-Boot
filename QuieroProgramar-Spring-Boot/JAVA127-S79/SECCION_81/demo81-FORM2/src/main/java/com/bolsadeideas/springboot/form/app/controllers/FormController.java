@@ -1,5 +1,6 @@
 package com.bolsadeideas.springboot.form.app.controllers;
 
+import com.bolsadeideas.springboot.form.app.editors.NombreMayusculaEditors;
 import com.bolsadeideas.springboot.form.app.models.domain.Usuario;
 import com.bolsadeideas.springboot.form.app.validations.UsuarioValidador;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,16 +29,22 @@ public class FormController {
     private UsuarioValidador validador;
 
     @InitBinder
-    public void initBinder(WebDataBinder binder){
+    public void initBinder(WebDataBinder binder) {
         binder.addValidators(validador);
 
         //fechas seria lo mismo del @DateTimeFormat
-        SimpleDateFormat dateFormat =  new SimpleDateFormat("yyyy-MM-dd");
-        //SOBRECARGA POR ESO COMENTE
-        //binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat,false));
-        binder.registerCustomEditor(Date.class,"fechaNacimento", new CustomDateEditor(dateFormat,false));
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         dateFormat.setLenient(false);
-    }
+
+        //SOLO COMENTE PARA TENER LAS 2 VERSIONES, la seguna aplica el formateo al campo fechaNacimeinto, la priema a todos los date
+        //binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat,false));
+        binder.registerCustomEditor(Date.class, "fechaNacimeinto", new CustomDateEditor(dateFormat, false));
+
+        //format para mayusculas, si quieor hacer con mas solo debo copiar e indicar los otros campos
+        binder.registerCustomEditor(String.class, "nombre", new NombreMayusculaEditors());
+        binder.registerCustomEditor(String.class, "apellido", new NombreMayusculaEditors());
+
+    }//
 
     @GetMapping("/form")
     public String form(Model model) {
