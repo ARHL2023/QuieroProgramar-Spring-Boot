@@ -33,7 +33,9 @@ public class FormController {
 
         //fechas seria lo mismo del @DateTimeFormat
         SimpleDateFormat dateFormat =  new SimpleDateFormat("yyyy-MM-dd");
-        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat,false));
+        //SOBRECARGA POR ESO COMENTE
+        //binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat,false));
+        binder.registerCustomEditor(Date.class,"fechaNacimento", new CustomDateEditor(dateFormat,false));
         dateFormat.setLenient(false);
     }
 
@@ -48,6 +50,7 @@ public class FormController {
         usuario.setEmail("andy@gmail.com");
         usuario.setUsername("1234");
         usuario.setPassword("1234");
+        usuario.setCuenta(6);
         model.addAttribute("titulo", "Formulario usuarios");
         model.addAttribute("usuario", usuario);
         return "form";
