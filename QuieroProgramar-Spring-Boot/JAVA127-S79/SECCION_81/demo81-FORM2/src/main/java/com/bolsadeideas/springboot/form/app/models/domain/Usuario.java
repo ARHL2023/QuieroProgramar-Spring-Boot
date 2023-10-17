@@ -3,6 +3,7 @@ package com.bolsadeideas.springboot.form.app.models.domain;
 //import com.bolsadeideas.springboot.form.app.validations.IdentificadorRegex;
 import com.bolsadeideas.springboot.form.app.validations.IdentificadorRegex;
 import com.bolsadeideas.springboot.form.app.validations.validationsApellido.Requerido;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -50,7 +51,7 @@ public class Usuario {
    // @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fechaNacimeinto;
 
-    @NotEmpty
-    private String pais;
+    @Valid//se validan los objetos relacionados, en este caso el id en Pais
+    private Pais pais;
 
 }

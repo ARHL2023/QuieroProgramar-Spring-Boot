@@ -1,6 +1,7 @@
 package com.bolsadeideas.springboot.form.app.controllers;
 
 import com.bolsadeideas.springboot.form.app.editors.NombreMayusculaEditors;
+import com.bolsadeideas.springboot.form.app.models.domain.Pais;
 import com.bolsadeideas.springboot.form.app.models.domain.Usuario;
 import com.bolsadeideas.springboot.form.app.validations.UsuarioValidador;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,10 +60,21 @@ public class FormController {
          return paises;
     }
 
+    //659. Llenando lista select con objetos del la clase Pais
+    @ModelAttribute("listaPaises")
+    public List<Pais> listaPaises() {
+        // Crea una lista de objetos Pais
+        return Arrays.asList(
+                new Pais(1, "EC", "Ecuador"),
+                new Pais(2, "AR", "Argentina"),
+                new Pais(3, "MA", "Marruecos"),
+                new Pais(4, "JP", "Japón")
+        );
+    }
+
     @GetMapping("/form")
     public String form(Model model) {
         Usuario usuario = new Usuario();
-
         //mostrando valores de atributos de objeto model en el formulario (only nombre y apellido)
         usuario.setNombre("Andy");
         usuario.setApellido("Luna");

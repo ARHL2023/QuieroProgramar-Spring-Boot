@@ -102,7 +102,7 @@
 			</div>
 			<hr> -->
 
-			<div>
+			<!-- <div>
 				<label for="pais">Pais</label>
 				<div>
 					<select id="pais" th:field="*{pais}">
@@ -111,6 +111,20 @@
 					</select>
 				</div>
 				<div th:if="${#fields.hasErrors('pais')}" th:errors="*{pais}"></div>
+			</div>
+			<hr> -->
+
+
+			<!-- 659. Llenando lista select con objetos del la clase Pais -->
+			<div>
+				<label for="pais.id">Pais</label>
+				<div>
+					<select id="pais.id" th:field="*{pais.id}">
+						<option value="">Seleccionar</option>
+						<option th:each="pais:${listaPaises}" th:text="${pais.nombre}" th:value="${pais.id}"></option>
+					</select>
+				</div>
+				<div th:if="${#fields.hasErrors('pais.id')}" th:errors="*{pais.id}"></div>
 			</div>
 			<hr>
 
