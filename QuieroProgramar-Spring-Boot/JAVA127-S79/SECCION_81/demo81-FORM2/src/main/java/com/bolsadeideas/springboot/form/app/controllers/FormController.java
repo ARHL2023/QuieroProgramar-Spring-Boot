@@ -9,15 +9,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;//@Valid
-import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 
 @Controller
@@ -45,6 +44,12 @@ public class FormController {
         binder.registerCustomEditor(String.class, "apellido", new NombreMayusculaEditors());
 
     }//
+
+    //recuerda que ModelAttribute hace que un metodo lo que retorna se pasa y se guarda en la vista
+    @ModelAttribute("paises")
+    public List<String> paises(){
+        return Arrays.asList("Ecuador","Argentina","Marruecos","Japón");
+    }
 
     @GetMapping("/form")
     public String form(Model model) {
