@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title th:text="${titulo}"></title>
+<link rel="stylesheet" th:href="@{/css/resultado.css}" />
 </head>
 <body>
     <h3 th:text="${titulo}"></h3>
 
-	<ul>
+	<!-- <ul>
 		<li th:text="${usuario.nombre}"></li>
 		<li th:text="${usuario.apellido}"></li>
 	    <li th:text="${usuario.username}"></li>
@@ -17,7 +18,50 @@
 		<li th:text="${usuario.cuenta}"></li>
 		<li th:text="${usuario.fechaNacimeinto}"></li>
 		<li th:text="${usuario.pais}"></li>
-	</ul>
+	</ul> -->
+	
+		<table border="1">
+			<tr>
+				<th>Nombre:</th>
+				<td th:text="${usuario.nombre}"></td>
+			</tr>
+			<tr>
+				<th>Apellido:</th>
+				<td th:text="${usuario.apellido}"></td>
+			</tr>
+			<tr>
+				<th>Username:</th>
+				<td th:text="${usuario.username}"></td>
+			</tr>
+			<tr>
+				<th>Password:</th>
+				<td th:text="${usuario.password}"></td>
+			</tr>
+			<tr>
+				<th>Correo:</th>
+				<td th:text="${usuario.email}"></td>
+			</tr>
+			<tr>
+				<th>Identificador:</th>
+				<td th:text="${usuario.identificador}"></td>
+			</tr>
+			<tr>
+				<th>Cuenta:</th>
+				<td th:text="${usuario.cuenta}"></td>
+			</tr>
+			<tr>
+				<th>Fecha Nacimiento:</th>
+				<td th:text="${#dates.format(usuario.fechaNacimeinto,'dd/MM/yyyy')}"></td>
+			</tr>
+			<tr>
+				<th>Pais:</th>
+				<td th:text="${usuario.pais}"></td>
+			</tr>
+		</table>
+	
+	
+
+	
 
 </body>
 </html>

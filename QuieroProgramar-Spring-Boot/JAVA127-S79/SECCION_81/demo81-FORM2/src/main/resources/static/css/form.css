@@ -1,0 +1,72 @@
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    text-align: center; /* Centra el texto en el centro horizontalmente */
+}
+
+/* Estilo para el título "Formulario usuarios" */
+.container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el formulario */
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+/* Estilo para las etiquetas */
+label {
+    font-weight: bold;
+    display: block; /* Hace que las etiquetas sean elementos de bloque */
+    text-align: left; /* Alinea el texto de las etiquetas a la izquierda */
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de entrada de texto */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilo para los errores */
+.error-message {
+    color: red;
+}
+
+/* Estilo para hacer el formulario responsive */
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 90%;
+        margin: 10px;
+    }
+}
+
