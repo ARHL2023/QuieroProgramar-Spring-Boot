@@ -11,4 +11,5 @@ PARA EL @Valid se necesita la dependencia en el pomp
     <version>3.1.5</version>
 </dependency>
 
-
+ netstat -ano | findstr "LISTENING" | findstr 8080
+ taskkill -PID 11816  -F   
